@@ -1,255 +1,274 @@
-
-/*config general */
-
-*{
-    margin: 0%;
-    padding:0%
+body {
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
-body{
-    min-width: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.main {
-    min-height: 100vh;
+body .main {
+  min-height: 100vh;
 }
 
 a {
-    color:darkred;
-    font-size: medium;
-    font-weight: bolder;
-    text-decoration: none;
-    list-style: none;
+  color: darkred;
+  font-size: medium;
+  font-weight: bolder;
+  text-decoration: none;
+  list-style: none;
 }
 
 /*logo petalo cakes - config de header*/
-
-header{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color:pink;
-    height: 15vh;
-    padding: 20px;
-   
-}
-header img{
-    display:flex;
-    width: 50px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  height: 15vh;
+  padding: 20px;
 }
 
-header nav{
-    width: 50%;
+header img {
+  display: flex;
+  width: 50px;
 }
+
+header av {
+  width: 50%;
+}
+
 header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100vh;
 }
 
 /*config index - inicio*/
-
-h1{
-    text-align: center;
-    color: darkred;
-    font: weight 80px;
-    margin-top: 20px;
+h1 {
+  text-align: center;
+  color: darkred;
+  font: weight 80px;
+  margin-top: 20px;
 }
 
-.imginicio{
-    display: inline-flex ;
-    width: 320px;
-    height: 400px;
-    margin-left: 10px;
-    margin-top: 30px;
+.imginicio {
+  display: inline-flex;
+  width: 320px;
+  height: 400px;
+  margin-left: 10px;
+  margin-top: 30px;
 }
 
 /*config productos*/
+.productos {
+  margin-top: 20px;
+  color: darkred;
+}
 
-.productos{
-    margin-top: 20px;
-    color:darkred
+.container {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
-.container{
-display: inline-flex;
-flex-grow: 1;
-justify-content: space-between;
-align-items: center;
-margin-top: 50px;
 
+.card {
+  margin-left: 90px;
+  width: 300px;
+  height: 300px;
 }
-.card{
-    margin-left: 90px;
-    width:300px;
-    height: 300px;
-      
+.card:hover {
+  transform: scale(1.3, 1.3);
 }
-.card:hover{
-    transform: scale(1.3,1.3);
+.card img {
+  width: 187px;
+  margin-bottom: 20px;
 }
-.card img{
-    width:187px;
-    margin-bottom: 20px;
-   
+.card-title {
+  text-decoration: solid;
+  margin-left: 50px;
 }
-.card-title{
-    text-decoration: solid;
-    margin-left: 50px;
+.card-text {
+  text-align: center;
+  color: darkred;
 }
-.card-text{
-    text-align: center;
-    color: darkred;
-}
+
 .btn {
-    width: 100px;
-    margin-left: 50px;
-    margin-bottom: 10px;
+  width: 100px;
+  margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 /*config tortas personalizadas*/
-
-.tortapersonalizada{
-    color:darkred;
-    margin-top: 20px;
-}
-.personalizada{
-   display: flex;
-  justify-content: center; 
-   padding: 20px
-}
-.oso{
-    display: flex;
-    width: 300px;
-    height: 400px;
-}
-.paroso{
-    display: flex;
-    width: 80vh;
-    justify-content: center;
-    padding: 30px;
-    text-align: justify;
-    margin-top: 30px;
-    color:darkred
- }
-article img:hover{
- transform: rotate(360deg);
- transition-duration: 2s;
+.tortapersonalizada {
+  color: darkred;
+  margin-top: 20px;
 }
 
- /*config quien soy?*/
+.personalizada {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 
- .quiensoy{
-    display: flex;
-    justify-content: center; 
-     padding: 20px;
-     margin-top: 20px;
-     color:darkred;
- }
- .dibujo{
-    display: flex;
-    width: 400px;
-    height: 400px;
-    margin-left: 20px;
- }
- .descriptivo{
-    display: flex;
-    width: 70vh;
-    justify-content: center;
-    padding: 10px;
-    text-align: justify;
-    margin-top: 50px;
- }
+.oso {
+  display: flex;
+  width: 300px;
+  height: 400px;
+}
+
+.paroso {
+  display: flex;
+  width: 80vh;
+  justify-content: center;
+  padding: 30px;
+  text-align: justify;
+  margin-top: 30px;
+  color: darkred;
+}
+
+article img:hover {
+  transform: rotate(360deg);
+  transition-duration: 2s;
+}
+
+.quiensoy {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: darkred;
+}
+
+.dibujo {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  margin-left: 20px;
+}
+
+.descriptivo {
+  display: flex;
+  width: 70vh;
+  justify-content: center;
+  padding: 10px;
+  text-align: justify;
+  margin-top: 50px;
+}
 
 /*config Contacto*/
+.contacto {
+  margin-top: 20px;
+  color: darkred;
+}
 
-.contacto{
-    margin-top: 20px;
-    color:darkred;
+.form {
+  margin-top: 30px;
+  margin-left: 520px;
+  color: darkred;
 }
-.form{
-    margin-top: 30px;
-    margin-left: 520px;
-    color: darkred;
-}
-#nombre{
-    width:300px;
-    
-}
-#correoelectronico{
-    width: 300px;
 
+#nombre {
+  width: 300px;
 }
-#ingresesuconsulta{
-   width: 300px;
-   height: 200px;
+
+#correoelectronico {
+  width: 300px;
 }
-.button{
-    margin-left: 120px;
-    margin-top: 10px;
-    padding-top: 5px;
-    color: pink;
-    background-color: darkred;
-    
+
+#ingresesuconsulta {
+  width: 300px;
+  height: 200px;
+}
+
+.button {
+  margin-left: 120px;
+  margin-top: 10px;
+  padding-top: 5px;
+  color: pink;
+  background-color: darkred;
 }
 
 /* config generales - colores links- animaciones*/
-
-
-.maincontent main{
-    color: darkred;
-}
-.nav{
-    width: 60px;
-   display: flex;
-}
-.linkheader{
-    color:darkred;
-    text-decoration: none;
+.maincontent main {
+  color: darkred;
 }
 
-#logowsp{
-    width:60px;
-    position:fixed;
-    right:50px;
-    bottom: 30px;
+.nav {
+  width: 60px;
+  display: flex;
 }
-article img:hover{
-    transform: rotate(360deg);
-    transition-duration: 2s;
+
+.linkheader {
+  color: darkred;
+  text-decoration: none;
+}
+
+#logowsp {
+  width: 60px;
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+}
+
+article img:hover {
+  transform: rotate(360deg);
+  transition-duration: 2s;
 }
 
 /* config footer*/
-
-footer{
-    background-color: pink;
+footer {
+  background-color: pink;
 }
 
-.secfooter{
-    margin-left: 600px;
-    margin-bottom: 0px;
-}
-.redsocial{
-    width:40px;
-    margin-top: 10px;
-    
-
-   
-}
-.linkfooter{
-    list-style: none;
-    color:darkred;
-    text-decoration: none;
-   
+.secfooter {
+  margin-left: 600px;
+  margin-bottom: 0px;
 }
 
+.redsocial {
+  width: 40px;
+  margin-top: 10px;
+}
 
-/*media queries*/
+.linkfooter {
+  list-style: none;
+  color: darkred;
+  text-decoration: none;
+}
 
-@media only screen and (max-width: 900px) {
-    header nav{
-        width: 100%;
+@media (max-width: 780px) {
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: pink;
+      height: 8vh;
+      padding: 5px;
     }
-  }
+    
+    header img {
+      display: flex;
+      width: 40px;
+      margin-left: 10px;
+    }
+    header av {
+      width: 30%;
+    }
+    
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100vh;
+    }
+    }
+    @media (max-width: 425px){
+      body .main {
+       height: 100px;
+      }
+      .secfooter {
+        margin-left: 60px;
+        margin-bottom: 0px;
+      }
+    }
+/*# sourceMappingURL=styles.css.map */
